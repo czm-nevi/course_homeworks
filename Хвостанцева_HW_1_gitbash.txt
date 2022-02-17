@@ -1,0 +1,77 @@
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir foldername
+3) Зайти в папку
+cd foldername
+4) Создать 3 папки
+mkdir foldername_1 foldername_2 foldername_3
+5) Зайти в любую папку
+Абсолютный путь: cd /C/Users/username/foldername_1
+Относительный: cd foldername_1
+6) Создать 5 файлов (3 txt, 2 json)
+touch textfile_1.txt textfile_2.txt textfile_3.txt jsonfile_1.json jsonfile_2.json
+7) Создать 3 папки
+mkdir fl_1 fl_2 fl_3
+8. Вывести список содержимого папки
+ls 
+9) + Открыть любой txt файл
+vim textfile_1.txt
+vim /C/Users/username/foldername_1 (путь до файла)
+10) + написать туда что-нибудь, любой текст.
+I (Insert)
+hello world
+11) + сохранить и выйти.
+нажать клавишу Esc
+ввести :wq
+12) Выйти из папки на уровень выше
+cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv jsonfile_1.json jsonfile_2.json /C/Users/username/foldername_1
+mv -t ./f_2 tt.txt ttn1.txt
+mv ./f_1/{file_1.txt,file_2.txt} f_2
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp jsonfile_1.json jsonfile_2.json /C/Users/username/foldername_3
+cp -t ./f_1 tt.txt ttn1.txt
+cp ./f_1/{xx.txt,yy.txt} f_2
+
+15) Найти файл по имени
+find /C/Users/username -name textfile_2ls
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f ttn2.txt | grep -i log_fail
+(это про поиск конкретного термина при мониторинге логов)
+17) вывести несколько первых строк из текстового файла
+head textfile_2.txt
+18) вывести несколько последних строк из текстового файла
+tail -5 textfile_2.txt 
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less textfile_3.txt
+20) вывести дату и время
+date
+
+
+Задание *
+1) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/terminal-hw-request
+Получен ответ:
+1669{"Intro":"Hello!! This is your the first response from server",
+"Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+curl "http://162.55.220.72:5005/get_method?name=Nevi&age=25"
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+cd ~/gb_exp/folder_1
+mkdir f_1 f_2 f_3
+cd f_1
+touch textfile_1.txt textfile_2.txt textfile_3.txt jsonfile_1.json jsonfile_2.json
+mkdir fl_1 fl_2 fl_3
+ls ~/gb_exp/folder_1/f_1
+mv textfile_1.txt textfile_2.txt ~/gb_exp/folder_1/f_2
+echo "script executed"
+
+
