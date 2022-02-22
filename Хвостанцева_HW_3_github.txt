@@ -1,0 +1,45 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bug Reports
+- SQL
+- Charles
+- Mobile testing
+
+	В веб-интерфейсе создаем новый репозиторий (forHW2)
+	далее в gitbash:
+	git clone https://github.com/czm-nevi/forHW2.git
+	cd forHW2
+	git branch Postman; git branch Jmeter; git branch CheckLists; git branch BugReports; git branch SQL; git branch Charles; git branch MobileTesting
+2. Запушить все ветки на внешний репозиторий
+	git push -u origin --all
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+	git checkout BugReports
+	vim bugReportStructure.txt
+4. Запушить структуру багрепорта на внешний репозиторий
+	git add bugReportStructure.txt
+	git commit -m "bug report structure"
+5. Вмержить ветку Bug Reports в Main
+	git checkout main
+	git merge BugReports
+6. Запушить main на внешний репозиторий.
+	git push
+7. В ветке CheckLists набросать структуру чек листа.
+	git checkout CheckLists
+	vim checkListStructure.txt
+8. Запушить структуру на внешний репозиторий
+	git add checkListStructure.txt
+	git commit -m "checklist"
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+	открыть страницу репозитория https://github.com/czm-nevi/forHW2
+	в появившейся плашке нажать "compare & pull request"
+	на открывшейся странице нажать create pull request
+	на следующей странице при отсутствии конфликтов появится кнопка
+	"merge pull request", нажать-> confirm merge
+10. Синхронизировать Внешнюю и Локальную ветки Main
+	git checkout main
+	git pull
+	проверяем, что всё ок, командой git status
+	Получен ответ "Your branch is up to date with 'origin/main'."
