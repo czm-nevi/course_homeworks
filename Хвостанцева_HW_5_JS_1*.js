@@ -48,6 +48,7 @@ const checkAge = function(age) {
         }
 } else {console.log("Error! Age can only be a number")}
 }
+
 checkAge ("aaa")
 
 // 3**:
