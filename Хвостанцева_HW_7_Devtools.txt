@@ -1,9 +1,5 @@
-Devtools HW
-
-Сделать скрин видео выполнения задания.
-Видео засылайте в личку.
+Devtools HW
 Ссылка на видео на гугл-диске: https://drive.google.com/file/d/1X5FrMV950S55N-xIWpHp21YXtB2LRxog/view?usp=sharing
-
 
  1. Открыть Chrome DevTools
  2. Зайти в панель Elements
