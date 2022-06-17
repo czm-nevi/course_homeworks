@@ -1,0 +1,5 @@
+Mobile testing checklists
+General checks for mobile apps and some checklists for Android and IOS guidelines.
+
+Accessible via link: 
+https://docs.google.com/spreadsheets/d/1RxpPGMgMt4sil3cxfWydCmC-rqgTWQbM7k_sgi4WT78/edit?usp=sharing
